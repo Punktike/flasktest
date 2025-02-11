@@ -15,6 +15,7 @@ class Idea:
         ideas = self.getideas(self.category.filepath)
         return ideas
 
+    # Recursion
     def getideas(self, path: str):
         ideas = []
         with os.scandir(path) as entries:

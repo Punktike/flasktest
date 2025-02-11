@@ -1,3 +1,50 @@
-Go run outside!
-Go play outside!
-Go do something outside!
+Go hiking!
+Go camping!
+Go fishing!
+Go birdwatching!
+Go kayaking!
+Go canoeing!
+Go paddleboarding!
+Go mountain biking!
+Go rock climbing!
+Play beach volleyball!
+Go surfing!
+Go swimming!
+Go snorkeling!
+Go scuba diving!
+Go sailing!
+Ride a jet ski!
+Go windsurfing!
+Go kitesurfing!
+Go stand-up paddleboarding!
+Go horseback riding!
+Practice archery!
+Play frisbee golf!
+Play soccer!
+Play baseball!
+Play softball!
+Play tennis!
+Play pickleball!
+Play basketball!
+Play ultimate frisbee!
+Do yoga in the park!
+Have a picnic!
+Go stargazing!
+Attend an outdoor concert!
+Do nature photography!
+Go geocaching!
+Skip rocks!
+Have a barbecue!
+Do gardening!
+Go running/jogging!
+Go roller skating!
+Go skateboarding!
+Fly a kite!
+Go for nature walks!
+Try orienteering!
+Join outdoor art classes!
+Join outdoor fitness classes!
+Go sledding!
+Try snowshoeing!
+Go cross-country skiing!
+Go ice skating!

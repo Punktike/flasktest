@@ -29,6 +29,16 @@ body {
     color: #ffffff;
 }
 
+.Header-reverse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #F3E3C4;
+    color: #ffffff;
+}
+
 .idea\|-button {
     display: flex;
     height: 100px;

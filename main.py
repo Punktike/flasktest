@@ -9,17 +9,23 @@ def initial_page():
     b = a.getidea()
     return render_template('index.html', idea =b)
 
+# Should maybe replace WithBack.html with a python function?
 @app.route('/outdoors')
 def outdoors():
     a = Idea.Idea(Category.Categories.outdoors)
     b = a.getidea()
-    return render_template('index.html', idea =b)
+
+    currenthref = "/outdoors"
+
+    return render_template('WithBack.html', idea =b, currenthref = currenthref)
 
 @app.route('/indoors')
 def indoors():
     a = Idea.Idea(Category.Categories.indoors)
     b = a.getidea()
-    return render_template('index.html', idea =b)
 
-if __name__ == "__main__": #Why does name have to be __main__?
+    currenthref = "/indoors"
+    return render_template('WithBack.html', idea =b, currenthref = currenthref)
+
+if __name__ == "__main__":
     app.run(host='0.0.0.0',	port=3000)
