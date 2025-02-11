@@ -3,7 +3,6 @@ class Category:
         self.filepath = filepath
         self.name = name
 
-
 class Categories:
     all = Category("all", "choices")
     outdoors = Category("outdoors", "choices/outdoors")

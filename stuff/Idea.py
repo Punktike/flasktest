@@ -1,21 +1,29 @@
-from stuff.Category import Category
-import random
-
 import os
+import random
+from stuff.Category import Category
 
 class Idea:
-    def __init__(self, text : str, category : Category):
-        self.text = text
+    def __init__(self, category: Category):
         self.category = category
 
-
     def getidea(self):
+        # Call getideas with the category's filepath
+        ideas = self.getideas(self.category.filepath)
+        return random.choice(ideas) if ideas else "No ideas found."
 
-        # Need to add support for subcategories
+    def getallideas(self):
+        ideas = self.getideas(self.category.filepath)
+        return ideas
 
-
-
-        with open(self.category.filepath, "r") as file:
-            content = file.read()
-            lines = content.split("\n")
-            return random.choice(lines)
+    def getideas(self, path: str):
+        ideas = []
+        with os.scandir(path) as entries:
+            for entry in entries:
+                if not entry.is_dir():
+                    with open(entry.path, "r") as file:
+                        content = file.read()
+                        lines = content.split("\n")
+                        ideas.extend(lines)
+                else:
+                    ideas.extend(self.getideas(entry.path))
+        return ideas
