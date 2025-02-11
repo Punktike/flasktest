@@ -15,7 +15,7 @@
           <!-- Should probably make this remember its last screen -->
             <button class="button"><a href="/">Back </a></button>
         </nav>
-        <img src="" alt="Logo (TBD)">
+        <img src="assets/logo.png" alt="Logo"> <!-- cant get this to load -->
     </header>
 
     <section class = "idea|-button">
@@ -27,8 +27,12 @@
 
     <!-- Will probably need to add some python here -->
     <section class="categories">
-        <button class="button">Outdoors</button>
-        <button class="button">Indoors</button>
+        <button class="button"> <a href="/outdoors"> Outdoors</a> </button>
+        <button class="button"> <a href="/indoors"> Indoors</a> </button>
+    </section>
+
+    <section class="currentcategory">
+        <p>Current Category: {{currentcategory}}</p>
     </section>
 </body>
 </html>

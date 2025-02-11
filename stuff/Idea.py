@@ -8,6 +8,7 @@ class Idea:
 
     def getidea(self):
         # Call getideas with the category's filepath
+        # It would probably be better to not remake the whole list every time
         ideas = self.getideas(self.category.filepath)
         return random.choice(ideas) if ideas else "No ideas found."
 
